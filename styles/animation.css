@@ -1,0 +1,78 @@
+.header-top{
+    animation: headerbg 2s linear infinite;
+}
+
+@keyframes headerbg {
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+.header__icon{
+    animation: icon 3s linear infinite;
+}
+@keyframes icon {
+    1%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+.header__logo{
+    animation: logo 8s linear infinite;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+@keyframes logo {
+    1%{
+        width: 1px;
+    }
+    100%{
+        width: 230px;
+    }
+}
+.intro-content{
+    animation: introbg 3s linear;
+}
+@keyframes introbg {
+    0%{
+        background: rgba(0, 0, 0, 0);
+    }
+    75%{
+        background: rgba(0, 0, 0, 0.4);
+    }
+    100%{
+        background: rgba(0, 0, 0, 0.75);
+    }
+}
+.intro-content>div{
+    animation: introtext 3s linear;
+    
+}
+@keyframes introtext {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.film__box{
+    transition: 0.3s;
+}
+.film__box:hover{
+    transform: scale(1.1);
+}
+.collect__info{
+    transition: 0.3s;
+}
+.collect__info:hover{
+    transform: scale(1.2);
+}
+.intro__btn-left{
+    transition: 0.3s;
+}
+.intro__btn-left:hover{
+    box-shadow: 0px 5px 30px var(--yellow);
+}
